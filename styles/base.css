@@ -41,7 +41,8 @@ header{
     justify-content: space-between;
     flex:1;
     flex-wrap:nowrap;
-    margin: auto;
+    margin: 0;
+    padding:0;
     
 }
 
@@ -50,6 +51,6 @@ header{
     display:flex;
     list-style: none;
     flex:1;
-    
+    justify-content:center;
    
 }
