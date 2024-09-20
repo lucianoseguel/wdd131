@@ -87,7 +87,7 @@ header{
    
 }
 
-#navbar ul li:hover{
+ ul li:hover{
     background-color: var(--carrot-orange);
 }
 

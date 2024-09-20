@@ -1,6 +1,5 @@
 
-//Last modified
-let oLastModif = new Date(document.lastModified);
+
 
 let lastmod = document.getElementById('lastm')
 
