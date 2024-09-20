@@ -149,6 +149,7 @@ main{
    flex-grow: 1;
    margin: 0;
    text-align: center;
+   font-size: large;
    justify-content: center;
 
 }
