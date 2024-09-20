@@ -156,7 +156,7 @@ main{
 
 .imgcontainer{
     display: flex;
-    max-width: auto;
+    
     height: auto;
     align-content: center;
     border-radius: 10px;
