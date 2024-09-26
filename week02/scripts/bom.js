@@ -33,6 +33,7 @@ button.addEventListener('click' , function() {// Add new scriptures to list
     delletebutton.addEventListener('click', function() {
    
         li.remove();
+        console.log("Deleted Element")
      
      })
 
@@ -40,7 +41,7 @@ button.addEventListener('click' , function() {// Add new scriptures to list
     li.append(delletebutton);
     input.value = '';
   
-    console.log("Llegaste hasta aca");
+    console.log("Added");
 	 
 })
 
