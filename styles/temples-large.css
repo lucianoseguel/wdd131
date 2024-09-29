@@ -95,3 +95,35 @@ header{
     align-items: center;
 
 }
+
+
+/*-------------------Main---------------*/
+h2{
+    text-align: center;
+}
+
+.container{
+
+    max-width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    place-items: center;
+
+}
+
+figure{
+    
+    overflow: hidden;
+    justify-items: center;
+    align-items: center;
+    margin: .5rem;
+
+}
+
+p{
+    text-align: center;
+}
