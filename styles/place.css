@@ -32,6 +32,7 @@ header{
     display: block;
     background-color: var(--sunglow);
     align-items: center;
+    justify-items: center;
 }
 
 #maintitle{
@@ -47,12 +48,15 @@ header{
 
 nav{
     max-width: 80vw;
-    justify-items: center;
+    justify-content: center;
+    margin: auto;
 }
 
 .navigation a{
-    width: 30em;
-    display: flex;
+    
+    text-align: center;
+    justify-content: center;
+    
 }
 
 .navigation a, .navigation li{
@@ -75,6 +79,38 @@ nav{
 
 
 /*-------------------Main---------------*/
+
+.hero{
+    background-image: url(../images/Carpinch.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    width: 100vw;
+    height: 80vh;
+    display: grid;
+  
+    
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 40% 60%;
+    padding: 2em;
+}
+
+.data1{
+    max-width: 25vw;
+}
+
+#country{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#weather{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+
+
 
 
 
@@ -178,6 +214,11 @@ nav {
 
 #menu.show::before {
 	content: "X";
+}
+
+
+.data1{
+    display: none;
 }
 
 }
