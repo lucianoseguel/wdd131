@@ -16,6 +16,7 @@ lastmod.textContent =  `Last Modified: ${document.lastModified}`
 
 
 let windchilltext = document.querySelector(".windchill")
+let windchilltextm = document.querySelector(".windchillmobile")
 
 function calculateWindChill(temperature, windSpeed) {
     // Wind Chill Formula
@@ -33,3 +34,4 @@ const windSpeed = 14;
 const windChill = calculateWindChill(temperature, windSpeed);
 
 windchilltext.textContent = `Wind Chill: ${windChill} °C`
+windchilltextm.textContent = `${windChill} °C`

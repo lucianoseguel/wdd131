@@ -117,6 +117,11 @@ nav{
     grid-auto-flow: row;
 }
 
+
+#datamob{
+    display: none;
+}
+
 .right{
     text-align: left;
     padding-left: 4px;
@@ -129,6 +134,7 @@ nav{
     text-align: right;
     font-weight: 700;
 }
+
 
 /*-------------------FOOTER----------------------*/
 
@@ -204,6 +210,7 @@ footer{
 /*-------------------------------MAIN--------------------------------*/
 
 
+
 #menu::before {
 	content: "≡";
 }
@@ -247,6 +254,12 @@ nav {
 
 .data1{
     display: none;
+}
+
+#datamob{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 }
