@@ -8,15 +8,14 @@ hambutton.addEventListener('click', () => {
 });
 
 
-/*
 let lastmod = document.getElementById('lastm')
 
 lastmod.textContent =  `Last Modified: ${document.lastModified}`
 
 
-*/
 
-let windchilltext = document.getElementById("windchill")
+
+let windchilltext = document.querySelector(".windchill")
 
 function calculateWindChill(temperature, windSpeed) {
     // Wind Chill Formula

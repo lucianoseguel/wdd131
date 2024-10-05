@@ -111,12 +111,39 @@ nav{
 }
 
 
+.table1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-flow: row;
+}
+
+.right{
+    text-align: left;
+    padding-left: 4px;
+    margin: 6px 0;
+
+}
+
+.left{
+    margin: 6px 0;
+    text-align: right;
+    font-weight: 700;
+}
+
+/*-------------------FOOTER----------------------*/
+
+footer{
+    display: flex;
+    text-align: center;
+    background-color: var(--celestial-blue);
+    justify-content: center;
+    flex-direction: column;
+}
 
 
 
 
-
-@media  (max-width: 500px) {
+@media  (max-width: 800px) {
     #maintitle{
         padding: 5%;
         height: auto;
@@ -226,7 +253,7 @@ nav {
 /*-------------------------------MAIN--------------------------------*/
 
 
-@media  (min-width: 501px) {
+@media  (min-width: 801px) {
 	.navigation {
 		display: flex;
 	}
