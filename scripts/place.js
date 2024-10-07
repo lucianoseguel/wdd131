@@ -35,3 +35,4 @@ const windChill = calculateWindChill(temperature, windSpeed);
 
 windchilltext.textContent = `Wind Chill: ${windChill} °C`
 windchilltextm.textContent = `${windChill} °C`
+
