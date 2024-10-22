@@ -24,5 +24,77 @@ https://coolors.co/f5ce69-3c2e21-8f1800-648908-df5605 */
 html,body{
     margin: 0;
     padding: 0;
-    background-color: var(--bistre);
+    overflow-x: hidden;
+    
+}
+
+/*------------------header-------------*/
+
+header{
+    display: block;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 30;
+}
+
+
+.navlogo{
+    max-width: 60px;
+    border-radius: 50%;
+}
+
+.container,.navbar{
+    background-color:var(--avocado)!important;
+    width: 100vw;
+}
+
+.nav-link{
+    color: var(--bistre);
+}
+
+/*--------------------main-----------------------*/
+
+.breakfast{
+    
+    background-image: url(../images/breakfast.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.lunch{
+    background-image: url(../images/lunch.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.dinner{
+    
+    background-image: url(../images/dinner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.hero1{
+    margin-top: 86px;
+    display: grid;
+    grid-template-columns: repeat(3,auto );
+}
+
+
+
+#mainmessage{
+    font-weight: 600;
+    color: white;
+    font-size: 80px;
+
 }
