@@ -5,22 +5,25 @@ const seconds = datenow.getSeconds();
 
 
 const background_1 = document.querySelector('#mainbackground')
+const kind_food = document.getElementById('kindoffood')
 
 
 
-
-if (hours >= 19){ //Define the image
+if (hours >= 19){ //-----------------------Define the image by time
    
-    background_1.classList.toggle('dinner')
+    background_1.classList.toggle('dinner')//Change image to DINNER
     
-   
+
    }
    else if (hours >= 11){
-    background_1.classList.toggle('lunch')
+    background_1.classList.toggle('lunch')//Change image to LUNCH
+   
    }
    else if (hours <= 11){
-    background_1.classList.toggle('breakfast')
-   }
+    background_1.classList.toggle('breakfast')//Change image to BREAKFAST   
+   
+
+}
 
    
    
@@ -32,20 +35,20 @@ function firstmessage(){    //Send the first message in page
 let hi = ''
 
 if (hours >= 19){
- hi = `Good Evenning Luciano. What do you like to dinner?`
+ hi = `Good Evenning! What do you order for dinner?`
 
  
 
 }
 else if (hours >= 11){
- hi = `Good Afternoon Luciano. What do you like to lunch?`
+ hi = `Good Afternoon! What do you order for lunch?`
 }
-else if (hours <= 11){
- hi = `Good Morning Luciano. What do you like to Breakfast?`
+else if (hours < 11){
+ hi = `Good Morning! What do you order for Breakfast?`
 }
 
 console.log(`La hora actual es: ${hours}:${minutes}:${seconds}`);
-return hi
+return hi;
 
 }
 

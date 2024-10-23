@@ -19,12 +19,14 @@ https://coolors.co/f5ce69-3c2e21-8f1800-648908-df5605 */
 *{
     text-align: center;
     font-family: var(--mainfont--);
+    box-sizing: border-box;
 }
 
 html,body{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    background-color: white;
     
 }
 
@@ -62,7 +64,7 @@ header{
     background-size: cover;
     background-position: center center;
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
 }
 
 .lunch{
@@ -71,7 +73,7 @@ header{
     background-size: cover;
     background-position: center center;
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
 }
 
 .dinner{
@@ -81,20 +83,54 @@ header{
     background-size: cover;
     background-position: center center;
     width: 100vw;
-    height: 100vh;
+    height: 50vh;
 }
 
 .hero1{
     margin-top: 86px;
     display: grid;
-    grid-template-columns: repeat(3,auto );
+    grid-template-columns: repeat(3,33.333% );
+    grid-template-rows: repeat(2,50%);
+    overflow: hidden;
 }
 
 
 
-#mainmessage{
+#mainmessage,#himessage{
+
+    grid-column: 3;
+    grid-row: 2;
+    font-family: var(--mainfont--) !important;
     font-weight: 600;
     color: white;
-    font-size: 80px;
+    font-size: 30px !important;
+    text-shadow: rgba(0, 0, 0, black);
+    
 
+}
+
+/*-----------------------Content body------------------------*/
+
+
+.menucontainer{
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    grid-auto-flow: column;
+    gap: auto;
+    max-width: 80vw;
+    margin: auto;
+    justify-items: center;
+    align-content: center;
+    
+}
+
+figure{
+    max-width: 230px;
+    justify-items: center;
+    align-content: center;
+    overflow: hidden;
+}
+
+.foodimg{
+    max-width: 230px;
 }
