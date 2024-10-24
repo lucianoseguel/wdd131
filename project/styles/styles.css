@@ -20,6 +20,7 @@ https://coolors.co/f5ce69-3c2e21-8f1800-648908-df5605 */
     text-align: center;
     font-family: var(--mainfont--);
     box-sizing: border-box;
+    color: black;
 }
 
 html,body{
@@ -111,10 +112,22 @@ header{
 
 /*-----------------------Content body------------------------*/
 
+.hidden{
+    overflow: hidden;
+}
+
+
+.titles{
+    text-align: left;
+    padding: 0 1em;
+    margin: 1em auto;
+}
 
 .menucontainer{
     display: grid;
     grid-template-columns: repeat(3,33%);
+    grid-template-rows: auto;
+    height: auto;
     grid-auto-flow: column;
     gap: auto;
     max-width: 80vw;
@@ -125,12 +138,53 @@ header{
 }
 
 figure{
-    max-width: 230px;
+    width: 25vw;
     justify-items: center;
-    align-content: center;
+    align-items: center;
     overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    background-color: white;
+    padding-bottom: 5px;
+}
+
+figure:hover{
+    transition: all 0.2s ease-in;
+    scale: 1.1;
+    
+    z-index: 2;
+}
+
+.promo{
+    position: absolute;
+    margin: 10px 0 0 10px;
+    background-color: var(--avocado);
+    color: white;
+    padding: 3px 15px;
+    border-radius: 10px;
 }
 
 .foodimg{
-    max-width: 230px;
+    max-width: 300px;
+  
+}
+
+.description{
+    margin: 0;
+    display: block;
+    padding: 0 10px;
+    width: 100%;
+    font-size: 15px;
+    text-align: left;
+}
+
+.pricetime{
+    display: inline;
+    margin: 5px;
+    padding: 3px 10px;
+    border-radius: 10px;
+    background-color: var(--penn-red);
+    color: white;
+    
 }
