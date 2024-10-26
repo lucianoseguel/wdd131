@@ -25,11 +25,6 @@ if (hours >= 19){ //-----------------------Define the image by time
 
 }
 
-   
-   
-
-
-
 
 function firstmessage(){    //Send the first message in page
 let hi = ''
@@ -58,3 +53,8 @@ mainmessage.textContent = firstmessage()
 
 
 console.log(firstmessage())
+
+
+//----------------Products------------------------
+
+
