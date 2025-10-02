@@ -1,0 +1,23 @@
+
+
+*{
+    padding: 3px;
+}
+table{
+    border-collapse: collapse;
+    margin: auto auto;
+}
+
+caption{
+    caption-side: bottom;
+}
+
+th{
+    border: solid black 1px;
+}
+
+.mainline{
+    background-color: burlywood;
+    margin: 0;
+    padding: 2px 3px;
+}

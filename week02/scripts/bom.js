@@ -46,5 +46,17 @@ button.addEventListener('click' , function() {// Add new scriptures to list
 })
 
 
+const points = [100, 88, 94, 78, 84, 69];
+
+function convertPointsToStatus(pointTotal) {
+  let status = 'Not Complete';
+  if (pointTotal >= 93) {
+    status = "Excellent";
+  } else if (pointTotal >= 70) {
+    status = "Complete";
+  }
+  return status;
+}
+
 
 
