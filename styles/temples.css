@@ -67,7 +67,7 @@ html,body{
     }
     
     .displayflex{
-        display: flex;
+        display: block;
     }
     
     .navigation a {
