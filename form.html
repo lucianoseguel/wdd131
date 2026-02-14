@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Product Review</h1>
+      <section>
+        <form action="review.html" method="get" class="form_review">
+          <label for="product">Select your product</label>
+          <select name="product" id="product"></select>
+          <div id="rating_container">
+            <label for="rating_1" >Overall Rating</label>
+            <input type="radio" name="rating" value="1" id="rating_1" required>
+            <label for="rating_1" class="stars">⭐</label>
+            <input type="radio" name="rating" value="2" id="rating_2" required>
+            <label for="rating_2" class="stars">⭐⭐</label>
+            <input type="radio" name="rating" value="3" id="rating_3" required>
+            <label for="rating_3" class="stars">⭐⭐⭐</label>
+            <input type="radio" name="rating" value="4" id="rating_4" required>
+            <label for="rating_4" class="stars">⭐⭐⭐⭐</label>
+            <input type="radio" name="rating" value="5" id="rating_5" required>
+            <label for="rating_5" class="stars">⭐⭐⭐⭐⭐</label>
+          </div>
+          <label for="date">Date of installation</label>
+          <input type="date" name="date" id="date">
+          <label for="feature_durability" id="features">What features did you find useful in the product? <b>(Check all that apply)</b>
+          </label>
+          <div id="features_container">
+            <input type="checkbox" name="features" value="Durability" id="feature_durability" class="features_box">
+            <label for="feature_durability" class="features_options">Durability</label>
+            <input type="checkbox" name="features" value="Easy of use" id="feature_easy_use" class="features_box">
+            <label for="feature_easy_use" class="features_options">Easy of use</label>
+            <input type="checkbox" name="features" value="Performance" id="feature_performance" class="features_box">
+            <label for="feature_performance" class="features_options">Performance</label>
+            <input type="checkbox" name="features" value="Design" id="feature_design" class="features_box">
+            <label for="feature_design" class="features_options">Design</label>
+          </div>
+          <label for="write_review">Write a Review </label>
+          <textarea name="write_review" id="write_review" rows="5"></textarea>
+          <label for="name">Your Name </label>
+          <input type="text" name="name" id="name">
+        </form>
+      </section>
+    </main>
+    <script src="scripts/form.js"></script>
+  </body>
+</html>

@@ -59,13 +59,17 @@ html,body{
     }
     .navigation {
         list-style: none;
+        display: none;
+        flex-direction: column;
         margin: 0 auto;
         max-width: 760px;
+        height: 100%;
     }
     
-    .navigation li {
-        display: none;
+    .displayflex{
+        display: flex;
     }
+    
     .navigation a {
         display: block;
         padding: 0.75rem;

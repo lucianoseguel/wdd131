@@ -1,0 +1,27 @@
+
+
+main{
+    justify-content: space-evenly;
+    max-width: 70vw;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.form_review{
+    display: flex;
+    flex-direction: column;
+    max-width: 50vw;
+
+}
+
+#features_container{
+    display: grid;
+    grid-template-columns: auto auto;
+
+    
+}
+
+.features_box{
+    justify-items: end;
+}
