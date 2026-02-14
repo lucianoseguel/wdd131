@@ -13,7 +13,7 @@ let lastmod = document.getElementById('lastm')
 
 lastmod.textContent =  `Last Modified: ${document.lastModified}`
 
-
+/* 
 const temples = [
   {
     templeName: "Aba Nigeria",
@@ -127,4 +127,4 @@ const newtemples = temples.filter(temple => {
 		return temple
 	} 
 	 
-})
+}) */
