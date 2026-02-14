@@ -30,15 +30,15 @@ html, body{
 /*-----------------HEADER ---------------------*/
 header{
     display: block;
-    background-color: var(--sunglow);
+     background: var(--blue-crayola);
     align-items: center;
     justify-items: center;
 }
 
 #maintitle{
     text-align: center;
-    background: var(--gunmetal);
-    color: var(--sunglow);
+  
+    color: white;
     height: 10vh;
     display: flex;
     justify-content: center;
