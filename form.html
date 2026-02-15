@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Noto+Sans+TC:wght@100..900&family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
       <nav>
-        <ul>
-          <li></li>
-        </ul>
+       
       </nav>
     </header>
     <main>
@@ -20,21 +21,36 @@
         <form action="review.html" method="get" class="form_review">
           <label for="product">Select your product</label>
           <select name="product" id="product"></select>
+          <br>
           <div id="rating_container">
-            <label for="rating_1" >Overall Rating</label>
-            <input type="radio" name="rating" value="1" id="rating_1" required>
-            <label for="rating_1" class="stars">⭐</label>
-            <input type="radio" name="rating" value="2" id="rating_2" required>
-            <label for="rating_2" class="stars">⭐⭐</label>
-            <input type="radio" name="rating" value="3" id="rating_3" required>
-            <label for="rating_3" class="stars">⭐⭐⭐</label>
-            <input type="radio" name="rating" value="4" id="rating_4" required>
-            <label for="rating_4" class="stars">⭐⭐⭐⭐</label>
-            <input type="radio" name="rating" value="5" id="rating_5" required>
-            <label for="rating_5" class="stars">⭐⭐⭐⭐⭐</label>
+            <label for="rating_1" >Overall Rating</label><br>
+            <div>
+               <div class="starbox">
+              <input type="radio" name="rating" value="1" id="rating_1" required>
+             
+              <label for="rating_1" class="stars">⭐</label></div>
+              <div class="starbox">
+              <input type="radio" name="rating" value="2" id="rating_2" required>
+              
+              <label for="rating_2" class="stars">⭐⭐</label></div>
+              <div class="starbox">
+              <input type="radio" name="rating" value="3" id="rating_3" required>
+              
+              <label for="rating_3" class="stars">⭐⭐⭐</label></div>
+              <div class="starbox">
+              <input type="radio" name="rating" value="4" id="rating_4" required>
+              
+              <label for="rating_4" class="stars">⭐⭐⭐⭐</label></div>
+              <div class="starbox">
+              <input type="radio" name="rating" value="5" id="rating_5" required>
+              <div class="starbox">
+              <label for="rating_5" class="stars">⭐⭐⭐⭐⭐</label></div>
+            </div>
           </div>
+          <br>
           <label for="date">Date of installation</label>
           <input type="date" name="date" id="date">
+          <br>
           <label for="feature_durability" id="features">What features did you find useful in the product? <b>(Check all that apply)</b>
           </label>
           <div id="features_container">
@@ -47,8 +63,10 @@
             <input type="checkbox" name="features" value="Design" id="feature_design" class="features_box">
             <label for="feature_design" class="features_options">Design</label>
           </div>
+          <br>
           <label for="write_review">Write a Review </label>
           <textarea name="write_review" id="write_review" rows="5"></textarea>
+          <br>
           <label for="name">Your Name </label>
           <input type="text" name="name" id="name">
         </form>

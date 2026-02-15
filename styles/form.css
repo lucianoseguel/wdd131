@@ -1,8 +1,26 @@
 
+:root{
+    --Mainfont--:  "Noto Sans TC", sans-serif;
+    --color1: #780000ff;
+--color2: #c1121fff;
+--fontcolor: #fdf0d5ff;
+--alternative1: #003049ff;
+--alternative2: #669bbcff;
+}
+
+*{
+    font-family: var(--Mainfont--);
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    max-width: 100vw;
+}
 
 main{
     justify-content: space-evenly;
-    max-width: 70vw;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -11,7 +29,9 @@ main{
 .form_review{
     display: flex;
     flex-direction: column;
-    max-width: 50vw;
+    max-width: 80vw;
+    margin: auto;
+    padding: 1em;
 
 }
 
@@ -24,4 +44,30 @@ main{
 
 .features_box{
     justify-items: end;
+}
+
+main h1{
+    display: flex;
+    width: 100%;
+    color: var(--fontcolor);
+    margin: auto;
+    justify-content: center;
+    font-family: var(--Mainfont--);
+    background-color: var(--color1);
+}
+
+
+
+#rating_container div{
+    display: inline;
+}
+
+#rating_container label{
+    display: flex;
+    flex-direction: row;
+}
+
+.starbox{
+    display: flex;
+    flex-direction: column;
 }
