@@ -131,3 +131,36 @@ li{
     background-color: var(--frozen-water);
 }
 
+.wireframes-container{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    
+    padding: 3px;
+    align-items:start;
+    margin: auto;
+    gap: 1em;
+    
+    
+}
+
+
+.wireframes-container div{
+
+ display:block;
+  text-align: center;
+  justify-items: center;
+
+    
+}
+
+#mobile-wireframe{
+    width: 30%;
+    
+   
+
+}
+
+#desktop-wireframe{
+    width: 50%;
+    
+}
