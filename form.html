@@ -19,8 +19,8 @@
       
       <section>
         <form action="review.html" method="get" class="form_review">
-          <label for="product">Select your product</label>
-          <select name="product" id="product"></select>
+          <label for="product"  >Select your product</label>
+          <select name="product" id="product" ></select>
           <br>
           <div id="rating_container">
             <label for="rating_1" >Overall Rating</label><br>
@@ -53,7 +53,7 @@
           <br>
           <label for="feature_durability" id="features">What features did you find useful in the product? <b>(Check all that apply)</b>
           </label>
-          <div id="features_container">
+          <div id="features_container" >
             <input type="checkbox" name="features" value="Durability" id="feature_durability" class="features_box">
             <label for="feature_durability" class="features_options">Durability</label>
             <input type="checkbox" name="features" value="Easy of use" id="feature_easy_use" class="features_box">
@@ -65,15 +65,16 @@
           </div>
           <br>
           <label for="write_review">Write a Review </label>
-          <textarea name="write_review" id="write_review" rows="5"></textarea>
+          <textarea name="write_review" id="write_review" rows="5" required></textarea>
           <br>
           <label for="name">Your Name </label>
           <input type="text" name="name" id="name">
+          <button type="submit">Submit</button>
         </form>
       </section>
     </main>
     <footer>
-      
+
     </footer>
     <script src="scripts/form.js"></script>
   </body>
