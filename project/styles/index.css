@@ -34,7 +34,7 @@ html,body{
 
 header{
     background-color: var(--medium-jungle);
-    height: 8vh;
+    height: 10vh;
   
     top: 0;
     align-content: center;
@@ -55,9 +55,10 @@ nav ul{
 .navitem{
     list-style-type: none;
    margin: auto;
-    color: white;
+    color: var(--frozen-water);
     padding: 5px 33%;
     border-radius: 10px;
+    font-size: 1.2em;
 
 }
 
@@ -87,6 +88,19 @@ nav ul li:nth-child(1){
 /***** End HEADER *****/
 
 /***** HERO *****/ 
+.herosection{
+    height: 90vh;
+    display: grid;
+    background-image: url(../images/hero.svg);
+    background-size: cover;
+    
+    background-position: center center;
+}
+
+.herosection img{
+    margin: auto;
+}
+
 
 
 /***** End HERO *****/
