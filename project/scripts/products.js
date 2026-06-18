@@ -67,15 +67,3 @@ let container_1 = (`<div class="menucontainer">
 
 //BREAKFAST---------------------------
 
-
-  let container_2 = productgenerator(Breakfast)
-
-
-
-        const lunches = document.querySelector('#lunches')
-
-        lunches.innerHTML = container_1
-
-        const breakfasts = document.getElementById('breaksfasts')
-       
-        breakfasts.innerText = container_2 

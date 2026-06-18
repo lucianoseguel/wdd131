@@ -1,0 +1,92 @@
+
+:root{
+--medium-jungle: #50a248ff;
+--hovereffect--:rgb(51, 108, 45);
+--desert-sand: #d2ab99ff;
+--mauve-shadow: #75485eff;
+--charcoal-brown: #292e1eff;
+--frozen-water: #d3fff3ff;
+
+/* FONTS */
+--primary-font--: "Noto Sans Display";
+--secondary-font--: "Poppins", sans-serif; 
+
+}
+
+*{
+    text-align: center;
+    font-family: var(--primary-font--);
+    box-sizing: border-box;
+    color: black;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: white;
+    
+}
+
+/***** HEADER *****/  
+
+header{
+    background-color: var(--medium-jungle);
+    height: 8vh;
+  
+    top: 0;
+    align-content: center;
+}
+
+
+
+nav ul{
+    display: grid;
+    grid-template-columns: 60% 1fr 1fr 1fr;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    
+}
+
+
+.navitem{
+    list-style-type: none;
+   margin: auto;
+    color: white;
+    padding: 5px 33%;
+    border-radius: 10px;
+
+}
+
+.navlogo{
+    max-width: 50px;
+    padding: 5px;
+    border-radius: 50%;
+   
+    
+    
+}
+
+nav ul li:nth-child(1){
+   display: flex;
+}
+
+.navitem:hover{
+    cursor: pointer;
+    background-color: var(--hovereffect--);
+    transition: all 0.2s ease-in;
+    
+
+
+}
+
+
+/***** End HEADER *****/
+
+/***** HERO *****/ 
+
+
+/***** End HERO *****/
