@@ -110,7 +110,7 @@ const oldestTemples = document.getElementById('old-temples').addEventListener('c
 });
 
 const largestTemples = document.getElementById('large-temples').addEventListener('click', () => {
-  let largest = temples.filter(temple => temple.area > 100000);
+  let largest = temples.filter(temple => temple.area > 90000);
   createTempleCard(largest);
 });
 
