@@ -1,7 +1,7 @@
 
 :root{
 --medium-jungle: #50a248ff;
---hovereffect--:rgb(51, 108, 45);
+--hovereffect--:#336c2d;
 --desert-sand: #d2ab99ff;
 --mauve-shadow: #75485eff;
 --charcoal-brown: #292e1eff;
@@ -101,6 +101,103 @@ nav ul li:nth-child(1){
     margin: auto;
 }
 
+@media  (max-width: 768px){
+
+   .herosection img{
+    margin: auto;
+    max-width: 70vw;
+}
+
+}
+
 
 
 /***** End HERO *****/
+
+
+/*======================================================= Our purpose =======================================================*/
+.purpose-container{
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+
+
+.purpose-container h2{
+    
+    font-size:xx-large;
+}
+
+.purpose-container p{
+font-size: large;
+max-width: 60vw;
+margin: auto;
+padding: 2rem;
+}
+
+
+@media  (max-width: 768px){
+
+   .purpose-container p{
+    max-width: 90vw;
+    padding: 2rem;
+    text-align: left;
+}
+}
+
+/*======================================================= End Our purpose =======================================================*/
+
+hr{
+max-width: 75vw;
+}
+
+/*======================================================= Buy steps section =======================================================*/
+
+
+
+.process-container{
+display: grid;
+grid-template-columns: repeat(1fr, 4);
+gap: 0;
+justify-items: center;
+max-width: 50vw;
+margin: auto;
+overflow: hidden;
+
+}
+
+.process-container h2{
+
+    grid-column-start: 1 ;
+    grid-column-end: 4;
+    font-size:xx-large;
+}
+
+.process-container img, .process-container svg{
+    max-width: 100%;
+    height: auto;
+        transition: all 0.2s ease;
+}
+
+.process-container img:hover{
+    max-width: 100%;
+    scale: 1.1;
+}
+
+
+
+@media  (max-width: 768px){
+
+    .process-container{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        justify-items: center;
+        max-width: 50vw;
+        margin: auto;
+        overflow: hidden;
+
+}
+}
+/*======================================================= End Buy steps section =======================================================*/
