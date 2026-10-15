@@ -399,7 +399,10 @@ margin: 0;
 /**======================================================= Promos Section =======================================================*/
 
 footer{
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 background-color:var(--medium-jungle);
 height: 10vh;
 padding: 2rem;
