@@ -107,6 +107,27 @@ let products = {
 };
 
 
+
+//------------------------- MENU RESPONSIVE
+
+function togglemenu (){
+  let header = document.querySelector("header")
+
+  let navitems = document.querySelectorAll(".navitem")
+  header.classList.toggle("header_toggle")
+  navitems.forEach(item => {
+                item.classList.toggle("navitem_active");
+            });
+
+
+  console.log("deployed")
+}
+
+
+
+
+//------------------------- Card container creation
+
 const card_container = document.querySelector(".promos-section")
 
 
@@ -149,4 +170,4 @@ function displayCard (array, container){
 }
 
 
-displayCard(products, card_container)
+displayCard(products, card_container) // Execeute the function for create cards

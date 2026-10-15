@@ -71,6 +71,10 @@ nav ul{
     
 }
 
+.hammenu{
+display: none;}
+
+
 nav ul li:nth-child(1){
    display: flex;
 }
@@ -86,6 +90,91 @@ nav ul li:nth-child(1){
 
 
 /***** End HEADER *****/
+
+
+/***** RESPONSIVE HEADER *****/  
+
+@media  (max-width: 768px){
+
+    header{
+    height: 10vh;}
+
+    nav{
+    justify-items: center;
+    height: 100%;
+    }
+   
+    .header_toggle{
+    height: 100%;
+    }
+
+    nav ul{
+    padding-top: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 20%;
+    width: 100%;
+    list-style-type: none;
+    margin: auto;
+    
+}
+
+.hammenu{
+display: inline;
+margin: auto;
+color: white;
+font-size: xx-large;
+
+}
+
+.hammenu:hover{
+cursor: pointer;
+}
+
+
+
+.navitem{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: none;
+}
+
+.navitem_active{
+display: inline;}
+
+
+
+.navlogo{
+    max-width: 50px;
+    padding: 5px;
+    border-radius: 50%;
+   
+    
+    
+}
+
+nav ul li:nth-child(1){
+   display: flex;
+}
+
+.navitem:hover{
+    cursor: pointer;
+    background-color: var(--hovereffect--);
+    transition: all 0.2s ease-in;
+    
+
+
+}
+
+
+}
+
+
+/***** END RESPONSIVE HEADER *****/  
+
+
+
+
 
 /***** HERO *****/ 
 .herosection{
@@ -303,3 +392,25 @@ margin: 0;
 
 
 /*======================================================= End Promos Section =======================================================*/
+
+
+
+
+/**======================================================= Promos Section =======================================================*/
+
+footer{
+    display: grid;
+background-color:var(--medium-jungle);
+height: 10vh;
+padding: 2rem;
+gap: 3rem;
+
+}
+
+footer a{
+gap: 1rem;}
+
+footer a img{
+max-width: 40px;}
+
+/*======================================================= End Buy steps section =======================================================*/
