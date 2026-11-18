@@ -119,6 +119,12 @@ const smallestTemples = document.getElementById('small-temples').addEventListene
   createTempleCard(smallest);
 })
 
+const newTemples = document.getElementById('new-temples').addEventListener('click', () => {
+  let newer = temples.filter(temple => new Date(temple.dedicated) > new Date('2000-01-01'));
+  createTempleCard(newer);
+})
+
+
 
 
 
