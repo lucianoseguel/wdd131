@@ -124,8 +124,6 @@ function togglemenu (){
 }
 
 
-
-
 //------------------------- Card container creation
 
 const card_container = document.querySelector(".promos-section")
