@@ -1,5 +1,25 @@
 
 
+:root{
+    /* palette */
+    --gunmetal: #31393cff;
+    --blue-crayola: #2176ffff;
+    --celestial-blue: #33a1fdff;
+    --sunglow: #fdca40ff;
+    --carrot-orange: #f79824ff;
+
+/* fonts-------*/
+--mainfont--: "Poppins", sans-serif;
+
+}
+
+
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    box-sizing: border-box;
+}
 
 html,body{
     scroll-behavior: smooth;
